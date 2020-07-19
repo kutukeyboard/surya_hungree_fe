@@ -32,6 +32,14 @@ const Category = () => {
 	return (
 		<div className="page-wrap">
 			<h1>Category</h1>
+			<button
+				className="btn-edit"
+				onClick={() => {
+					history.push("/categorydetail/");
+				}}
+			>
+				Add New
+			</button>
 			<table>
 				<thead>
 					<tr>

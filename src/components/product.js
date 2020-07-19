@@ -29,8 +29,16 @@ const Product = () => {
 		getData();
 	}, []);
 	return (
-		<div>
+		<div className="page-wrap">
 			<h1>Product</h1>
+			<button
+				className="btn-edit"
+				onClick={() => {
+					history.push("/productdetail/");
+				}}
+			>
+				Add New
+			</button>
 			<table>
 				<thead>
 					<tr>
