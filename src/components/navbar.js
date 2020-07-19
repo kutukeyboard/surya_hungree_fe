@@ -9,7 +9,7 @@ const NavBar = () => {
 				<div className="nav-title">Hungree - Surya</div>
 			</div>
 			<div className="nav-btn">
-				<label for="nav-check">
+				<label htmlFor="nav-check">
 					<span></span>
 					<span></span>
 					<span></span>
@@ -20,7 +20,14 @@ const NavBar = () => {
 				<NavLink to="/">Home</NavLink>
 				<NavLink to="/category">Category</NavLink>
 				<NavLink to="/product">Product</NavLink>
-				<NavLink to="/login">Logout</NavLink>
+				<NavLink
+					to="/login"
+					onClick={() => {
+						localStorage.clear();
+					}}
+				>
+					Logout
+				</NavLink>
 			</div>
 		</div>
 	);

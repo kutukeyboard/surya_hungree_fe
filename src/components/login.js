@@ -30,7 +30,6 @@ const Login = () => {
 								password: values.password,
 							})
 							.then((res) => {
-								console.log(res.data);
 								if (res.data.token) {
 									localStorage.clear();
 									localStorage.setItem("token", res.data.token);
@@ -40,7 +39,6 @@ const Login = () => {
 							.catch((err) => {
 								console.log(err);
 							});
-						console.log(values);
 					}}
 				>
 					{({ errors, touched }) => (
