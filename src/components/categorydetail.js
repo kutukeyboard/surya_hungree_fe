@@ -25,7 +25,6 @@ const CategoryDetail = () => {
 					headers(localStorage.getItem("token"))
 				)
 				.then((res) => {
-					console.log(res.data);
 					setCategoryData(res.data);
 				})
 				.catch((err) => {
